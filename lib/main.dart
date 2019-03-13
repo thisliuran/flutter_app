@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:english_words/english_words.dart';
+import 'package:flutter_app/index.dart';
+import 'package:flutter_app/login2.dart';
+import 'package:flutter_app/pic.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,33 +10,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title:"Hello World！",
-        home:new RandomWords()
+        theme: new ThemeData(primaryColor: Colors.lightBlue),
+
+        home:new LoginPage(),
+
     );
   }
 }
 
-class RandomWords extends StatefulWidget{
-  @override
-  State<StatefulWidget> createState() => new RandomWordsStates();
-}
-
-class RandomWordsStates extends State<RandomWords>{
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    final wordPair = new WordPair.random();
-
-    return new Scaffold(
-      appBar: new AppBar(title:new Text("测试")),
-      body:_buildList()
-    );
-  }
-
-  final _list = <String>[];
-  final _biggerFont = const TextStyle(fontSize: 20);
-
-  Widget _buildList(){
-
-  }
-
-}

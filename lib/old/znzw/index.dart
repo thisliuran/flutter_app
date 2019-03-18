@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
-import 'package:flutter_app/login.dart';
+import 'package:flutter_app/old/znzw/login.dart';
 class RandomWords extends StatefulWidget{
   @override
   State<StatefulWidget> createState() => new RandomWordsStates();
@@ -22,7 +22,7 @@ class RandomWordsStates extends State<RandomWords>{
         
         ),
      
-        body:_buildList()
+        body:_buildList(),
     );
   }
 

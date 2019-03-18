@@ -23,7 +23,7 @@ class _LoginPageState extends State<LoginPage> {
     Dio dio = new Dio();
     Response response;
     response=await dio.get("http://www.httpbin.org/get",
-        queryParameters: {"phonenumber":phoneController.text,"password":passController.text});
+        data: {"phonenumber":phoneController.text,"password":passController.text});
     List<Object> map = json.decode(response.data.toString());
 
     print(map[0]);

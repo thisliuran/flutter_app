@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/index.dart';
-import 'package:flutter_app/login2.dart';
-import 'package:flutter_app/pic.dart';
+import 'package:flutter_app/old/znzw/index.dart';
+import 'package:flutter_app/old/znzw/login2.dart';
+import 'package:flutter_app/old/znzw/pic.dart';
 
 void main() => runApp(MyApp());
 
